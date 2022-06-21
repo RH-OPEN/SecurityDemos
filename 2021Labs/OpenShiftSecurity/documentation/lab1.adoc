@@ -11,7 +11,7 @@
 === Lab 1.1 Docker Hub から「不正な」コンテナイメージを取得し、OpenShift がデフォルトでコンテナをロックダウンする方法を観察する。
 
 
-. *myproject*（または他のお好みの名前でも良いです）という新しいプロジェクトを作成します。
+. ユーザ*admin*でログインし、*myproject*（または他のお好みの名前でも良いです）という新しいプロジェクトを作成します。
 
 +
 [source]
@@ -67,7 +67,7 @@ image:images/lab1.1-failingpod-log.png[]
 +
 [source]
 ----
-oc describe pod $pod
+oc describe pod $POD
 # Or 
 # oc describe pod <insert_pod_name i.e httpd-f958ccb88-r5542>
 ----
@@ -129,7 +129,7 @@ Pod Template:
   Labels:           app=httpd
                     deploymentconfig=httpd
   Annotations:      openshift.io/generated-by: OpenShiftWebConsole
-  Service Account:  privileged-sa <== non-default service acount that will run containers
+  Service Account:  privileged-sa <== non-default service account that will run containers
   Containers:
    httpd:
     Image:        image-registry.openshift-image-registry.svc:5000/container-security/httpd@sha256:10ed1591781d9fdbaefaafee77067f12e833c699c84ed4e21706ccbd5229fd0a
@@ -157,7 +157,9 @@ Events:
 +
 [source]
 ----
-[localhost ~]$oc logs httpd-765df85d48-pwtm5
+[localhost ~]$ oc logs $POD
+# Or
+# oc logs <insert_pod_name i.e httpd-f958ccb88-r5542>
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 10.128.2.95. Set the 'ServerName' directive globally to suppress this message
 AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 10.128.2.95. Set the 'ServerName' directive globally to suppress this message
 [Wed Apr 06 22:50:53.509904 2022] [mpm_event:notice] [pid 1:tid 140675277868352] AH00489: Apache/2.4.53 (Unix) configured -- resuming normal operations
