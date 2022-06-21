@@ -205,7 +205,7 @@ image:images/lab2.2-createnetworkpolicies2-new.png[]
 +
 image:images/lab2.2-denyothernamespaces.png[]
 
-. 次に、*proj-a*のクライアントから、*proj-c*のプロジェクトのhello worldサービスをcurlしてみます。今度はcurlの実行に失敗していることに注意してください。
+. 次に、**proj-a**のクライアントから、**proj-c**のプロジェクトのhello worldサービスをcurlしてみます。今度はcurlの実行に失敗していることに注意してください。
 +
 [source]
 ----
