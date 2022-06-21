@@ -122,7 +122,7 @@ image:images/lab2.1-ocgetpods4.png[]
 +
 [source]
 ----
-oc get pods --show-labels
+oc get pods -n proj-c --show-labels
 ----
 +
 image:images/lab2.1-showlabels2.png[]
@@ -247,6 +247,7 @@ image:images/lab2.3-curl-from-proj-a-ok.png[]
 +
 [source]
 ----
+[localhost ~]$ oc project proj-b
 [localhost ~]$ oc rsh ${POD}
 sh-5.0# curl -v hello.proj-c:8080
 ----
