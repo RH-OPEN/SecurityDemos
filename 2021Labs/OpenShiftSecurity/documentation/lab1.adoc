@@ -171,7 +171,7 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 
 OpenShift Documentation (https://docs.openshift.com/container-platform/4.10/security/container_security/security-hosts-vms.html) によると、ベストプラクティスは、ホストシステム自体を管理または監視するものを除くほとんどのコンテナは、非 root ユーザーとして実行する必要があります。特権レベルを落とすか、可能な限り最小限の特権でコンテナを作成することが、独自の OpenShift Container Platform クラスターを保護するための推奨ベストプラクティスです。  
 
-. 最後に、OpenShiftコンソールでPodの *YAML** ビューに移動して、OpenShiftコンソールでPodのYAMLを調査します。コンテナ定義までスクロールダウンして、SCCがいくつかのcapabilitesを削除し、specifc runAsUserを追加していることに注目してください。これらの変更により、ポッドはもともと安全でない状態で設計されているため、スケジューリングができなくなりました。
+. 最後に、OpenShiftコンソールでPodの *YAML* ビューに移動して、OpenShiftコンソールでPodのYAMLを調査します。コンテナ定義までスクロールダウンして、SCCがいくつかのcapabilitesを削除し、specifc runAsUserを追加していることに注目してください。これらの変更により、ポッドはもともと安全でない状態で設計されているため、スケジューリングができなくなりました。
 +
 image:images/lab1.1-scc-modify.png[]
 +
