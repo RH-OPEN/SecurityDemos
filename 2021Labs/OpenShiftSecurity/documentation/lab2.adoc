@@ -138,7 +138,7 @@ image:images/lab2.1-showlabels2.png[]
 oc project proj-a
 POD=`oc get pods --selector=run=client --output=custom-columns=NAME:.metadata.name --no-headers`
 ----
-上記のコマンドは、単にポッド名を*POD*変数に代入しています。ポッドによってはデフォルトでランダムな名前を持っているので、このコマンドでポッドに特定の名前を与えることができます。
+上記のコマンドは、単にポッド名を**POD**変数に代入しています。ポッドによってはデフォルトでランダムな名前を持っているので、このコマンドでポッドに特定の名前を与えることができます。
 +
 [source]
 ----
@@ -181,7 +181,7 @@ image:images/lab2.1.10-webconsole1.png[]
 . (以前のバージョンのOpenShiftでは)これらの2つのNetwork Policiesがデフォルトで作成されていることに注意してください:
 
 
-* *allow-from-all-namespaces*: これによって、他のプロジェクト(プロジェクト、*proj-a*や*proj-b*など)からプロジェクト、*proj-c*のサービスを叩くことができるのです。
+* *allow-from-all-namespaces*: これによって、他のプロジェクト(プロジェクト、**proj-a**や**proj-b**など)からプロジェクト、**proj-c**のサービスを叩くことができるのです。
 * *allow-from-ingress-namespace*: ルーターからのingress（ルーターを経由して外部からの侵入）を許可します。
 
 +
@@ -194,7 +194,7 @@ image:images/lab2.1.10-webconsole1.png[]
 +
 image:images/lab2.2.2-deletenetworkpolicies.png[]
 
-. 今度は、他の名前空間からのトラフィックを拒否する新しいネットワークポリシーをプロジェクト、*proj-c*に作成します。
+. 今度は、他の名前空間からのトラフィックを拒否する新しいネットワークポリシーをプロジェクト、**proj-c**に作成します。
 これは サンプル・ネットワーク・ポリシーの右側に表示されている最初の例です。サンプル・ネットワーク・ポリシーがたくさんあることに注意してください。最初の例である *Limit access to the current namespace* を適用します。[Try it］をクリックします。これでyamlが作成されます。次に、*create* をクリックします。
 +
 image:images/lab2.2-createnetworkpolicies1.png[]
@@ -220,7 +220,7 @@ image:images/lab2.2-curlfail.png[]
 
 
 
-. ネットワークポリシーがすべてのnamespaceからのトラフィックをブロックするため、*proj-c*で動作しているアプリケーションに*proj-b*からアクセスしようとすると、同じような失敗が発生します。
+. ネットワークポリシーがすべてのnamespaceからのトラフィックをブロックするため、**proj-c**で動作しているアプリケーションに*proj-b*からアクセスしようとすると、同じような失敗が発生します。
 
 === Lab 2.3 選択的なネットワークアクセスのためのネットワークポリシーの作成
 
@@ -229,7 +229,7 @@ image:images/lab2.2-curlfail.png[]
 +
 image:images/lab2.3-allow-traffic-from-proj-a.png[]
 
-. さて、*Networking* -> *Network Policies*に移動して、*web-allow-production*ネットワークポリシーがそこにあることに注意してください:
+. さて、*Networking* -> **Network Policies**に移動して、**web-allow-production**ネットワークポリシーがそこにあることに注意してください:
 +
 image:images/lab2.3-policies-list.png[]
 
