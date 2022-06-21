@@ -41,7 +41,7 @@ oc label namespace proj-c name=proj-c
 +
 [source]
 ----
-oc get projects proj-a proj-b proj-c --show-labels 
+[localhost ~]$ oc get projects proj-a proj-b proj-c --show-labels 
 ----
 +
 image:images/lab2.1-showlabels.png[]
@@ -63,7 +63,7 @@ image:images/lab2.1-showlabels.png[]
 +
 [source]
 ----
-oc get pods
+[localhost ~]$ oc get pods
 ----
 +
 image:images/lab2.1-ocgetpods.png[]
