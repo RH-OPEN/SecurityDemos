@@ -76,6 +76,7 @@ image:images/lab2.1-ocgetpods.png[]
 [localhost ~]$ oc run client --image=fedora --command -- tail -f /dev/null
 pod/client created
 
+----
 
 . クライアントポッドとhello worldポッドが実行されたことを確認しましょう。
 +
