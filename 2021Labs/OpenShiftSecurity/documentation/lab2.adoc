@@ -91,8 +91,8 @@ image:images/lab2.1-ocgetpods2.png[]
 [source]
 ----
 
-[localhost ~]$ oc project proj-b 
-[localhost ~]$ oc run client  --image=fedora --command -- tail -f /dev/null  
+[localhost ~]$ oc project proj-b  
+[localhost ~]$ oc run client  --image=fedora --command -- tail -f /dev/null    
 [localhost ~]$ oc project proj-a  
 [localhost ~]$ oc run client  --image=fedora --command -- tail -f /dev/null  
 
