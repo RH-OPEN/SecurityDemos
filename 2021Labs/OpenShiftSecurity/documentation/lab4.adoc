@@ -393,7 +393,7 @@ image:images/lab4-devsecops47.png[300,700]
 +
 [注意] UI上で https://issues.redhat.com/browse/ROX-9938[bug] に遭遇したため、ACS UI経由でポリシーにビルドイメージの例外を追加することができなくなります。ここでの手順は、回避策です。ACS v3.70では、SHAなしでUI経由でビルドイメージを追加できるようになります。
 +
-* `Fixable Severity at least Important` をクリックすると、ポリシーの詳細ページが表示されます。ポリシーページでは、`Actions` の下でポリシーの編集、クローン、エクスポート、無効化ができます。`Actions` の下にある 'Clone policy' をクリックします。開発者はガイダンスの情報を使って、イメージを修正することができます。ライフサイクルステージの情報は、ポリシーの強制が行われる場所です。有効なポリシーに違反しているため、パイプラインのビルドとデプロイのステージを通過することはできません。
+* `Fixable Severity at least Important` をクリックすると、ポリシーの詳細ページが表示されます。ポリシーページでは、`Actions` の下でポリシーの編集、クローン、エクスポート、無効化ができます。`Actions` の下にある ``Clone policy`` をクリックします。開発者はガイダンスの情報を使って、イメージを修正することができます。ライフサイクルステージの情報は、ポリシーの強制が行われる場所です。有効なポリシーに違反しているため、パイプラインのビルドとデプロイのステージを通過することはできません。
 +
 image:images/lab4-devsecops48.png[300,700]
 +
@@ -445,7 +445,7 @@ image:images/lab4.2-5-editpolicy2.png[300,700]
 image:images/lab4.2-5-importPolicy.png[200,500]
 +
 * `Begin import` をクリックします。
-* ポリシー 'Fixable Severity' を選択してください。
+* ポリシー ``Fixable Severity`` を選択してください。
 +
 image:images/lab4.2-5-filterPolicy.png[300,700]
 +
@@ -453,7 +453,7 @@ image:images/lab4.2-5-filterPolicy.png[300,700]
 +
 image:images/lab4.2-5-disablePolicy.png[300,700]
 +
-.. これで、`Fixable Severity`のポリシーは以下のようになります。
+.. これで、``Fixable Severity``のポリシーは以下のようになります。
 +
 image:images/lab4.2-5-2Policy.png[300,700]
 +
@@ -479,7 +479,7 @@ image:images/lab4-devsecops56.png[300,700]
 
 === Lab 4.3 GitOpsを使った継続的デリバリー
 
-GitOpsは、クラウドネイティブなアプリケーションの継続的なデプロイメントを実装するための宣言的な方法です。GitOpsを使用して、マルチクラスタKubernetes環境にわたるOpenShift Container Platformクラスタとアプリケーションを管理するための反復可能なプロセスを作成することができます。GitOpsは、複雑なデプロイメントを高速に処理し自動化することで、デプロイとリリースサイクルの時間を短縮します。+
+GitOpsは、クラウドネイティブなアプリケーションの継続的なデプロイメントを実装するための宣言的な方法です。GitOpsを使用して、マルチクラスタKubernetes環境にわたるOpenShift Container Platformクラスタとアプリケーションを管理するための反復可能なプロセスを作成することができます。GitOpsは、複雑なデプロイメントを高速に処理し自動化することで、デプロイとリリースサイクルの時間を短縮します。 +
 GitOps のワークフローは、アプリケーションを開発、テスト、ステージング、そして本番へとプッシュします。GitOps は新しいアプリケーションをデプロイするか既存のアプリケーションを更新するので、私たちはリポジトリを更新するだけでよく、他のすべては GitOps が自動化します。
 
 Argo CD は Git リポジトリに保存された設定を継続的に監視し、DEV および STAGE 環境にアプリケーションをデプロイする際に、Kustomize を使用して環境固有の設定をオーバーレイします。
@@ -491,7 +491,7 @@ image:images/lab4-devsecops57.png[300,700]
 +
 image:images/lab4-devsecops43.png[300,300]
 +
-.. リンクは Argo CD のログインにリダイレクトされます。初めてArgo CDにログインする場合は、'Advanced' → 'Proceed to openshift-gitops-server-openshift-gitops.apps...' のリンクをクリックしてください。
+.. リンクは Argo CD のログインにリダイレクトされます。初めてArgo CDにログインする場合は、``Advanced`` → ``Proceed to openshift-gitops-server-openshift-gitops.apps...`` のリンクをクリックしてください。
 .. "admin" ユーザーとしてログインするためには、まず、以下のコマンドを実行して、そのパスワードを取得してください。
 +
 [source]
@@ -503,7 +503,7 @@ oc get secret/openshift-gitops-cluster -n openshift-gitops -o jsonpath='{.data.a
 +
 image:images/lab4-devsecops58.png[500,600]
 +
-.. 'dev-spring-petclinic' をクリックすると、アプリケーションにアクセスできます。
+.. ``dev-spring-petclinic`` をクリックすると、アプリケーションにアクセスできます。
 . ArgoCD は、アプリケーションの branch/repo に定義されているすべてのマニフェストをデプロイします。アプリケーションには "Synced" と表示されています。
 +
 image:images/lab4-devsecops59.png[300,700]
@@ -512,7 +512,7 @@ image:images/lab4-devsecops59.png[300,700]
 +
 image:images/lab4-devsecops102.png[900,700]
 +
-.. 上記の詳細には、アプリケーションがデプロイされているネームスペースが表示されます。OpenShift Dev コンソールに戻り、左側のナビゲーションメニューから devsecops-dev project の下にある 'Topology' をクリックします。矢印をクリックすると、アプリケーションの URL にアクセスできます。
+.. 上記の詳細には、アプリケーションがデプロイされているネームスペースが表示されます。OpenShift Dev コンソールに戻り、左側のナビゲーションメニューから devsecops-dev project の下にある ``Topology`` をクリックします。矢印をクリックすると、アプリケーションの URL にアクセスできます。
 +
 image:images/lab4-devsecops60.png[300,500]
 +
@@ -520,7 +520,7 @@ image:images/lab4-devsecops60.png[300,500]
 +
 image:images/lab4-devsecops61.png[500,500]
 +
-.. Argo CD コンソールに戻ります。左上の 'Applications' をクリックします。
+.. Argo CD コンソールに戻ります。左上の ``Applications`` をクリックします。
 +
 [注意]  `stage-spring-petclinic` の namespace は devsecops-qa に設定されています。
 +
@@ -534,7 +534,7 @@ image:images/lab4-devsecops63.png[300,700]
 +
 image:images/lab4-devsecops65.png[300,700]
 +
-.. OpenShift Dev コンソールに戻り、左のナビゲーションメニューから devsecops-qa project の下にある 'Topology' をクリックします。矢印アイコンをクリックして、アプリケーションの URL にアクセスします。
+.. OpenShift Dev コンソールに戻り、左のナビゲーションメニューから devsecops-qa project の下にある ``Topology`` をクリックします。矢印アイコンをクリックして、アプリケーションの URL にアクセスします。
 +
 image:images/lab4-devsecops66.png[300,300]
 +
@@ -608,7 +608,7 @@ image:images/lab4-devsecops81.png[400,700]
 
 === Lab 4.5 セキュリティポリシーとCI違反について
 
-このデモでは、パイプラインに適用されるセキュリティポリシーの制御、イメージのスキャン、アプリケーションのデプロイに使用されるさまざまなデプロイメントテンプレートの分析が可能です。+
+このデモでは、パイプラインに適用されるセキュリティポリシーの制御、イメージのスキャン、アプリケーションのデプロイに使用されるさまざまなデプロイメントテンプレートの分析が可能です。 +
 ACSで異なるセキュリティポリシーを適用し、このポリシー違反がDevSecOpsパイプラインの各ステップ（ステップ “image-check”, “image-scan”, “deploy-check”) に現れるとCIパイプラインを失敗させることが可能です。 
 
 * `waffle icon` をクリックし、 `Red Hat Advanced Cluster Security for Kubernetes` を選択します。
@@ -624,7 +624,7 @@ image:images/lab4-devsecops82.png[300,700]
 image:images/lab4-devsecops83.png[200,200]
 +
 セキュリティポリシーは、BUILDレベル（イメージのビルド/プッシュ時）、またはDEPLOYMENTレベル（アプリケーションのデプロイを阻止する）で定義することができます。
-* Package manager policy をクリックします。
+* ``Red Hat Package Manager in Image`` をクリックします。
 +
 image:images/lab4-devsecops84.png[300,700]
 +
@@ -647,8 +647,8 @@ image:images/lab4-devsecops87.png[300,700]
 [#fiximage]
 === Lab 4.2のボーナスラボ：Image を修正する
 
-`bad image`からビルド強制に合格するImageへの移行を示せる、完全なデモのために、Image ビルドのTektonタスクを更新し、Imageを修正することができます。
-この例では、ACS で `Red Hat Package Manager in Image` ポリシーの実施を有効にしています。これは、ベースイメージに yum と rpm の両方のパッケージマネージャーが存在するため、イメージチェックでパイプラインが失敗することになります。
+``bad image``からビルド強制に合格するImageへの移行を示せる、完全なデモのために、Image ビルドのTektonタスクを更新し、Imageを修正することができます。
+この例では、ACS で ``Red Hat Package Manager in Image`` ポリシーの実施を有効にしています。これは、ベースイメージに yum と rpm の両方のパッケージマネージャーが存在するため、イメージチェックでパイプラインが失敗することになります。
 
 . 前のセクションで行ったように、*Fixable Severity at least important* ポリシーで違反を回避する例外を追加します。
 . *Red Hat Package Manager in Image* ポリシーの実施を有効にします:
