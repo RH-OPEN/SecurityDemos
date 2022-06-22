@@ -212,6 +212,7 @@ image:images/lab2.2-denyothernamespaces.png[]
 oc rsh ${POD}
 #Inside the pod you have to execute:
 curl -v hello.proj-c:8080
+注意：実行失敗の結果が戻ってくるまで、数分かかります
 ----
 +
 image:images/lab2.2-curlfail.png[]
@@ -220,7 +221,7 @@ image:images/lab2.2-curlfail.png[]
 
 
 
-. ネットワークポリシーがすべてのnamespaceからのトラフィックをブロックするため、**proj-c**で動作しているアプリケーションに*proj-b*からアクセスしようとすると、同じような失敗が発生します。
+. ネットワークポリシーがすべてのnamespaceからのトラフィックをブロックするため、**proj-c**で動作しているアプリケーションに**proj-b**からアクセスしようとすると、同じような失敗が発生します。
 
 === Lab 2.3 選択的なネットワークアクセスのためのネットワークポリシーの作成
 
@@ -250,6 +251,7 @@ image:images/lab2.3-curl-from-proj-a-ok.png[]
 [localhost ~]$ oc project proj-b
 [localhost ~]$ oc rsh ${POD}
 sh-5.0# curl -v hello.proj-c:8080
+注意：実行失敗の結果が戻ってくるまで、数分かかります
 ----
 +
 image:images/lab2.3-curl-from-proj-b-fails.png[]
