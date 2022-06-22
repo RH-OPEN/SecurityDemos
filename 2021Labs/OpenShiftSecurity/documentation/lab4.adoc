@@ -43,7 +43,7 @@ image:images/lab4-devsecops02.png[800,800]
 === ユーザー要件
 
 - 最新のブラウザー: ChromeとFirefoxを推奨
-- コマンドラインと''oc''ツールは、ラボに付属しているBastion VMに含まれています。
+- コマンドラインと'oc'ツールは、ラボに付属しているBastion VMに含まれています。
 
 * 以下のコマンドのように、割り当てられた VM に SSH 接続します:
 +
@@ -66,7 +66,7 @@ image:images/lab4-devsecops02.png[800,800]
 oc login -u admin api.cluster-{GUID}.{GUID}.sandbox###.opentlc.com:6443
 ----
 +
-''oc login'' のAPIサーバー情報は、xref:beforeyoustart[始める前に] に記載されています。
+'oc login' のAPIサーバー情報は、xref:beforeyoustart[始める前に] に記載されています。
 +
 * また、ラップトップでocクライアントをセットアップする場合は、以下の手順を実行します:
 +
@@ -100,7 +100,7 @@ image:images/lab4-devsecops03.png[200,200]
 +
 image:images/lab4-devsecops04.png[200,200]
 +
-.. ocp-workshop "プロジェクトに移動します。
+.. ocp-workshop プロジェクトに移動します。
 +
 image:images/lab4-devsecops05.png[200,200]
 +
@@ -136,7 +136,7 @@ image:images/lab4-devsecops08.png[200,700]
 このオプションは、開発者の観点からすると最もポピュラーなものかもしれません。PR や git リポジトリへのプッシュからパイプラインが始まり、webhook が自動的にパイプラインを開始します。
 +
 .. 開発コンソールから、左のナビメニューにある `Search` をクリックします。
-.. 'route'と入力し、リストの中から`Route`をクリックします。
+.. 'route'と入力し、リストの中から``Route``をクリックします。
 +
 image:images/lab4-devsecops09.png[400,400]
 +
@@ -144,7 +144,7 @@ image:images/lab4-devsecops09.png[400,400]
 +
 image:images/lab4-devsecops10.png[400,600]
 +
-.. `Sign In`サインイン`をクリックし、_gogsadmin_の認証情報でログインします。
+.. ``サインイン``をクリックし、__gogsadmin__の認証情報でログインします。
 +
 image:images/lab4-devsecops11.png[500,400]
 +
@@ -157,7 +157,7 @@ image:images/lab4-devsecops11.png[500,400]
 +
 image:images/lab4-devsecops12.png[400,700]
 +
-.. README.mdをクリックし、`Edit this file`をクリックし、変更を加えてください:
+.. README.mdをクリックし、``Edit this file``をクリックし、変更を加えてください:
 +
 image:images/lab4-devsecops13.png[400,700]
 +
