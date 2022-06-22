@@ -86,7 +86,7 @@ Web コンソールを使用して OpenShift にログインし、__Administrato
 
 image:images/lab3-1-projects.png[]
 
-左側の_Workloads_を展開し、**Deployments**を選択し、リソース一覧に``openshift-rbac``が表示されていることを確認します。
+左側の__Workloads__を展開し、**Deployments**を選択し、リソース一覧に``openshift-rbac``が表示されていることを確認します。
 
 image:images/lab3.2-deployments.png[]
 
@@ -94,7 +94,7 @@ NOTE: もし、``openshift-rbac``が表示されていない場合は、画面�
 
 アプリケーションの一部である__Pods__、__Secrets__、__ConfigMaps__を見るために、自由に周辺をブラウズしてください。
 
-完了したら、アプリケーションに公開されている_Route_に移動します。左側のナビゲーションペインにある__Networking__ペインを展開し、**Routes**を選択します。
+完了したら、アプリケーションに公開されている__Route__に移動します。左側のナビゲーションペインにある__Networking__ペインを展開し、**Routes**を選択します。
 
 image:images/lab3.1-routes.png[]
 
@@ -228,7 +228,7 @@ curl --cacert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt -H "Authoriza
 
 OpenShift API に対する認証に成功し、OpenShift API によって公開されているエンドポイントのリストが表示されました。
 
-実行中の Pod から抜けるには、`exit`と入力して _Return_ キーを押してください。
+実行中の Pod から抜けるには、``exit``と入力して _Return_ キーを押してください。
 
 ==== Roles と RoleBindings
 
@@ -255,7 +255,7 @@ oc create role pod-lister --verb=list --resource=pods
 role.rbac.authorization.k8s.io/pod-lister created
 ----
 
-以下のコマンドを実行することで、`pod-lister`ロールの中身を見ることができます。
+以下のコマンドを実行することで、``pod-lister``ロールの中身を見ることができます。
 
 [source]
 ----
@@ -287,7 +287,7 @@ rules:
 
 新しいロールを作成したら、次のステップでは、`pod-lister` ロールを、アプリケーションを実行するのに使用するサービスアカウントに関連付けます。デフォルトでは、OpenShift のすべての Pod は `default` サービスアカウントを使用して実行されます。名前空間にスコープされたロールをサービスアカウントなどのエンティティに関連付けるには、`RoleBinding` を使用します。
 
-以下のコマンドを実行して、`pod-listers` という名前の `RoleBinding` を新規に作成します。
+以下のコマンドを実行して、``pod-listers`` という名前の ``RoleBinding`` を新規に作成します。
 
 [source]
 ----
