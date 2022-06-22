@@ -449,7 +449,7 @@ image:images/lab4.2-5-importPolicy.png[200,500]
 +
 image:images/lab4.2-5-filterPolicy.png[300,700]
 +
-* `Fixable Severity at least Important` の末尾の3点アイコンをクリック -> select `Disable policy` を選択します。
+* `Fixable Severity at least Important` の末尾の3点アイコンをクリック -> `Disable policy` を選択します。
 +
 image:images/lab4.2-5-disablePolicy.png[300,700]
 +
