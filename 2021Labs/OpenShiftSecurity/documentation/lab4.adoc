@@ -647,7 +647,7 @@ image:images/lab4-devsecops87.png[300,700]
 [#fiximage]
 === Lab 4.2のボーナスラボ：Image を修正する
 
-``bad image``からビルド強制に合格するImageへの移行を示せる、完全なデモのために、Image ビルドのTektonタスクを更新し、Imageを修正することができます。
+``bad image``のビルドに強制合格するImageへの移行を示せる、完全なデモのために、Image ビルドのTektonタスクを更新し、Imageを修正することができます。
 この例では、ACS で ``Red Hat Package Manager in Image`` ポリシーの実施を有効にしています。これは、ベースイメージに yum と rpm の両方のパッケージマネージャーが存在するため、イメージチェックでパイプラインが失敗することになります。
 
 . 前のセクションで行ったように、*Fixable Severity at least important* ポリシーで違反を回避する例外を追加します。
@@ -671,7 +671,7 @@ image:images/lab4-devsecops87.png[300,600]
 +
 image:images/lab4-devsecops91.png[300,700]
 +
-.. イメージに"rpm"と"yum"パッケージマネージャーがインストールされているため、*image-check*ステップで失敗することを確認し、確認します。*image-check*ステップからの提案に注目してください:
+.. イメージに"rpm"と"yum"パッケージマネージャーがインストールされているため、**image-check**ステップで失敗することを確認し、確認します。**image-check**ステップからの提案に注目してください:
 +
 image:images/lab4-devsecops92.png[300,700]
 +
@@ -681,7 +681,7 @@ image:images/lab4-devsecops92.png[300,700]
 +
 image:images/lab4-devsecops93.png[300,700]
 +
-.. Tekton cli で
+.. または、Tekton cli で
 +
 |===
 |tkn task delete s2i-java-11
