@@ -29,7 +29,7 @@ image:images/lab1.1-4.7.33-workloads.png[]
 
 
 注意: OpenShift コンソールの *Developer* パースペクティブを使用してプロジェクトに移動し、左側メニューの "+Add" ボタンをクリックしてそのワークフローを開始する方が簡単な場合があります。
-. 次に、**Container Images** をクリックします。**Image name from external registry** が選択されていることを確認し、Image Nameに **docker.io/httpd** と入力します。虫眼鏡を押します。
+ 次に、**Container Images** をクリックします。**Image name from external registry** が選択されていることを確認し、Image Nameに **docker.io/httpd** と入力します。虫眼鏡を押します。
 +
 image:images/lab1.1-4.7.33-image-external.png[]
 
