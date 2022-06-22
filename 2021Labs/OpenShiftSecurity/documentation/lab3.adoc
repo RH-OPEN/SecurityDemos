@@ -296,7 +296,7 @@ oc create rolebinding pod-listers --role=pod-lister --serviceaccount=rbac-lab:de
 
 `--serviceacount` フラグは `<名前空間>:<サービスアカウント>` という形式をとります。
 
-以下のコマンドを実行して、`RoleBinding`の中身を確認します。
+以下のコマンドを実行して、``RoleBinding``の中身を確認します。
 
 [source]
 ----
@@ -326,6 +326,8 @@ subjects:
 デフォルトのサービスアカウントで `rbac-lab` ネームスペースの Pod をリストアップするための `Role` と `RoleBinding` が作成されたので、ウェブブラウザでアプリケーションに戻ってページを更新し、最初のクエリに対して有効な応答が表示されていることを確認します。
 
 image:images/lab3.2-pod-list-application.png[]
+
+NOTE: Podの数は、OpenShift 環境の内容によって異なる場合があります。
 
 ==== ClusterRoles と ClusterRoleBindings
 
@@ -361,7 +363,7 @@ Kubernetesの最初の数バージョンでは、すべてのAPIリソースが�
 
 Kubernetesの計算能力を活用しようとする成長著しいエコシステムを促進させるために、登録が必要なAPIの数の増加を管理できる方法を提供するために、link:https://kubernetes.io/docs/concepts/overview/kubernetes-api/#api-groups[API Groups] という概念が作成されました。必要なエンドポイントをすべて `v1` の下に置くのではなく、開発者が独自のAPIを登録し、エンドポイントのコアセットと同様の方法で管理できるAPIグループというコンセプトが作られたのです。
 
-`Namespaces` と `Pods` はコアAPIグループの一部である。`Roles` と `ClusterRoles` を作成する際に、以下のように `apiGroups` フィールドが含まれていることにお気づきかもしれません。
+`Namespaces` と `Pods` はコアAPIグループの一部です。`Roles` と `ClusterRoles` を作成する際に、以下のように `apiGroups` フィールドが含まれていることにお気づきかもしれません。
 
 [source]
 ----
