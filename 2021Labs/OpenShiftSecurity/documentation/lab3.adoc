@@ -14,11 +14,11 @@ OpenShiftはデフォルトでもセキュアなプラットフォームであ�
 セキュリティの文脈では、基本的な用語として「認証」と「認可」の2つがあります。その違いと、それらが OpenShift にどのように適用されるかを説明します。
 
 * 認証 - ユーザーの身元を確認すること。
-* 認可 - リソースへのアクセスを確認する。
+* 認可 - リソースへのアクセスを確認すること。
 
 === OpenShift の認証
 
-_ユーザ_ は、OpenShift API に対してリクエストを行うことができるエンティティです。以下のタイプに分かれます。
+__ユーザ__ は、OpenShift API に対してリクエストを行うことができるエンティティです。以下のタイプに分かれます。
 
 * 一般ユーザー - クラスターにアクセスする一般的な個人
 * システム・ユーザー - _ノード_ などのインフラ関連資産で使用されます。
@@ -82,23 +82,23 @@ OpenShift の Role Based Access Control の管理に関する機能を確認す�
 
 ==== 環境のウォークスルー
 
-Web コンソールを使用して OpenShift にログインし、_Administrator_ パースペクティブから、左側のナビゲーションペインで _Home_ を展開し、*Projects* を選択します。Developer_ パースペクティブが表示されている場合は、_Developer_ ドロップダウンを選択し、_Administrator_ を選択します。利用可能なプロジェクトのリストに *rbac-lab* プロジェクトが表示されていることを確認します。
+Web コンソールを使用して OpenShift にログインし、__Administrator__ パースペクティブから、左側のナビゲーションペインで __Home__ を展開し、**Projects** を選択します。__Developer__ パースペクティブが表示されている場合は、__Developer__ ドロップダウンを選択し、__Administrator__ を選択します。利用可能なプロジェクトのリストに *rbac-lab* プロジェクトが表示されていることを確認します。
 
 image:images/lab3-1-projects.png[]
 
-左側の_Workloads_を展開し、*Deployments*を選択し、リソース一覧に`openshift-rbac`が表示されていることを確認します。
+左側の_Workloads_を展開し、**Deployments**を選択し、リソース一覧に``openshift-rbac``が表示されていることを確認します。
 
 image:images/lab3.2-deployments.png[]
 
-NOTE: もし、`openshift-rbac`が表示されていない場合は、画面上部の_Project_ドロップダウンから`rbac-lab`を選択して、`rbac-lab`プロジェクトであることを確認してください。
+NOTE: もし、``openshift-rbac``が表示されていない場合は、画面上部の__Project__ドロップダウンから``rbac-lab``を選択して、``rbac-lab``プロジェクトであることを確認してください。
 
-アプリケーションの一部である_Pods_、_Secrets_、_ConfigMaps_を見るために、自由に周辺をブラウズしてください。
+アプリケーションの一部である__Pods__、__Secrets__、__ConfigMaps__を見るために、自由に周辺をブラウズしてください。
 
-完了したら、アプリケーションに公開されている_Route_に移動します。左側のナビゲーションペインにある_Networking_ペインを展開し、*Routes*を選択します。
+完了したら、アプリケーションに公開されている_Route_に移動します。左側のナビゲーションペインにある__Networking__ペインを展開し、**Routes**を選択します。
 
 image:images/lab3.1-routes.png[]
 
-_Location_の列で、ハイパーリンクを選択してアプリケーションに移動します。お使いの環境の設定によっては、アプリケーションが安全なトランスポートを使用して通信しているため、安全でないSSLの警告が表示される場合があります。警告を受け入れて、アプリケーションへのナビゲーションを続行します。以下のような画面が表示されるはずです。
+__Location__の列で、ハイパーリンクを選択してアプリケーションに移動します。お使いの環境の設定によっては、アプリケーションが安全なトランスポートを使用して通信しているため、安全でないSSLの警告が表示される場合があります。警告を受け入れて、アプリケーションへのナビゲーションを続行します。以下のような画面が表示されるはずです。
 
 image:images/lab3.1-applicationoverview.png[] 
 
@@ -109,14 +109,14 @@ image:images/lab3.1-applicationoverview.png[]
 
 OpenShift でデプロイされるすべての Pod には、OpenShift API との通信を可能にするツールのセットが含まれています。これらのツールは、`/var/run/secrets/kubernetes.io/serviceaccount` ディレクトリに存在します。
 
-OpenShift CLI を使用して、クラスターにログインしていることを確認し、`rbac-lab` namespace に変更します。
+OpenShift CLI を使用して、クラスターにログインしていることを確認し、``rbac-lab`` namespace に変更します。
 
 [source]
 ----
 oc project rbac-lab
 ----
 
-プロジェクトに入ったら、*oc get pods* と入力して、実行中の Pod をリストアップします。
+プロジェクトに入ったら、**oc get pods** と入力して、実行中の Pod をリストアップします。
 
 [source]
 ----
