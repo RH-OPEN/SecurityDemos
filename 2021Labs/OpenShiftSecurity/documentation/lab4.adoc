@@ -43,7 +43,7 @@ image:images/lab4-devsecops02.png[800,800]
 === ユーザー要件
 
 - 最新のブラウザー: ChromeとFirefoxを推奨
-- コマンドラインと'oc'ツールは、ラボに付属しているBastion VMに含まれています。
+- コマンドラインと``oc``ツールは、ラボに付属しているBastion VMに含まれています。
 
 * 以下のコマンドのように、割り当てられた VM に SSH 接続します:
 +
@@ -66,7 +66,7 @@ image:images/lab4-devsecops02.png[800,800]
 oc login -u admin api.cluster-{GUID}.{GUID}.sandbox###.opentlc.com:6443
 ----
 +
-'oc login' のAPIサーバー情報は、xref:beforeyoustart[始める前に] に記載されています。
+``oc login`` のAPIサーバー情報は、xref:beforeyoustart[始める前に] に記載されています。
 +
 * また、ラップトップでocクライアントをセットアップする場合は、以下の手順を実行します:
 +
@@ -104,7 +104,7 @@ image:images/lab4-devsecops04.png[200,200]
 +
 image:images/lab4-devsecops05.png[200,200]
 +
-.. 左メニューの 'Pipelines' をクリックすると、すべてのパイプラインが表示されます。
+.. 左メニューの ``Pipelines`` をクリックすると、すべてのパイプラインが表示されます。
 +
 image:images/lab4-devsecops06.png[400,700]
 +
@@ -112,13 +112,13 @@ image:images/lab4-devsecops06.png[400,700]
 +
 image:images/lab4-devsecops07.png[600,800]
 +
-.. 右上の “Actions” をクリック → “start” を選択
+.. 右上の “Actions” をクリック → “start” を選択します。
 +
 image:images/lab4-devsecops08.png[200,700]
 +
 .. "Workspaces"でPVCを選択し、パイプラインが実行時に使用する共有ストレージのパスとしてPVC petclinic-build-workspaceを選択します。
 .. "maven-settings" で「Config Map」を選択し、"maven-settings" をConfig Mapとして選択します。
-.. start をクリック
+.. start をクリックします。
 +
 ** Option 2: コマンドラインからパイプラインを起動する。
 コマンドラインはテスト中にパイプラインを開始するのに便利な方法で、PRやgitへのpushをシミュレートしてパイプラインを起動させる方法です。CLIでパイプラインを開始するのが好きなユーザー向けです。
@@ -175,7 +175,7 @@ image:images/lab4-devsecops14.png[400,700]
 +
 image:images/lab4-devsecops04.png[200,200]
 +
-. `OCP-Workshop`プロジェクトが選択されていることを確認してください。
+. ``OCP-Workshop``プロジェクトが選択されていることを確認してください。
 +
 image:images/lab4-devsecops15.png[300,300]
 +
@@ -216,7 +216,7 @@ image:images/lab4-devsecops24.png[400,700]
 +
 image:images/lab4-devsecops25.png[600,700]
 +
-... `gogsadmin`をクリックすると、このラボのための2つのリポジトリがあります。
+... ``gogsadmin``をクリックすると、このラボのための2つのリポジトリがあります。
 +
 gogsadminユーザの認証情報は以下の通りです:
 +
@@ -232,7 +232,7 @@ image:images/lab4-devsecops26.png[300,700]
 reportを見てみましょう!
 +
 ... 開発コンソールから、左のナビメニューにある `Search` をクリックします。
-... Resourcesをクリックし、`route`と入力、リストから`Route`をクリックします。
+... Resourcesをクリックし、``route``と入力、リストから``Route``をクリックします。
 +
 image:images/lab4-devsecops09.png[400,400]
 +
@@ -283,12 +283,12 @@ image:images/lab4-devsecops33.png[300,700]
 
 .. 左のメニューから `Pipelines` をクリックします。
 .. `petclinic-build-dev` パイプラインをクリックします。
-.. `Actions` -> `Edit Pipeline`をクリックします。
+.. `Actions` -> ``Edit Pipeline``をクリックします。
 .. `image-scan` タスクをクリックし、`pretty` の代わりに `csv` を使用します。
 +
 image:images/lab4.2-image-scan.png[500,700]
 +
-.. `Save`をクリックします。
+.. ``Save``をクリックします。
 .. オプションで `Actions` -> rerun を選択すると、イメージスキャンの実際の出力が表示されます。
 +
 image:images/lab4.2-image-scan-withlogs.png[500,700]
@@ -328,7 +328,7 @@ image:images/lab4-devsecops36.png[500,700]
 +
 image:images/lab4-devsecops37.png[300,700]
 +
-.. `Image Findings`セクションの上にある `Dockerfile` セクションを '>' をクリックして展開すると、ACS CVEデータベースにより、各ステップごとに詳細なイメージコンポーネントと関連するCVEが表示されます。
+.. ``Image Findings``セクションの上にある ``Dockerfile`` セクションを '>' をクリックして展開すると、ACS CVEデータベースにより、各ステップごとに詳細なイメージコンポーネントと関連するCVEが表示されます。
 +
 image:images/lab4-devsecops38.png[400,700]
 +
