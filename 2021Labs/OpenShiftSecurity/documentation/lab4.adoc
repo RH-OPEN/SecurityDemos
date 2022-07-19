@@ -95,7 +95,7 @@ image:images/lab4-devsecops03.png[200,200]
 . パイプラインを開始するには、3つの方法があります:
 ** Option 1: Developer UIを使用して開始する
 .. ブラウザで OpenShift Console の URL を参照する。
-.. 提供された認証情報を使用してコンソールにログインする。
+.. 提供されたadminユーザの認証情報を使用してコンソールにログインする。
 .. まだ開発者パースペクティブにいない場合は、左上の開発者コンソールに切り替えるためにDeveloperを選択します。
 +
 image:images/lab4-devsecops04.png[200,200]
@@ -113,10 +113,10 @@ image:images/lab4-devsecops06.png[400,700]
 image:images/lab4-devsecops07.png[600,800]
 +
 .. 右上の “Actions” をクリック → “start” を選択します。
+.. "Workspaces"でPVCを選択し、パイプラインが実行時に使用する共有ストレージのパスとしてPVC petclinic-build-workspaceを選択します。
 +
 image:images/lab4-devsecops08.png[200,700]
 +
-.. "Workspaces"でPVCを選択し、パイプラインが実行時に使用する共有ストレージのパスとしてPVC petclinic-build-workspaceを選択します。
 .. "maven-settings" で「Config Map」を選択し、"maven-settings" をConfig Mapとして選択します。
 .. start をクリックします。
 +
