@@ -175,7 +175,7 @@ image:images/lab4-devsecops14.png[400,700]
 +
 image:images/lab4-devsecops04.png[200,200]
 +
-. ``OCP-Workshop``プロジェクトが選択されていることを確認してください。
+. ``ocp-workshop``プロジェクトが選択されていることを確認してください。
 +
 image:images/lab4-devsecops15.png[300,300]
 +
