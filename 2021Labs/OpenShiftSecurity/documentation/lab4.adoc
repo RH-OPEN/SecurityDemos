@@ -114,10 +114,10 @@ image:images/lab4-devsecops07.png[600,800]
 +
 .. 右上の “Actions” をクリック → “start” を選択します。
 .. "Workspaces"でPVCを選択し、パイプラインが実行時に使用する共有ストレージのパスとしてPVC petclinic-build-workspaceを選択します。
+.. "maven-settings" で「Config Map」を選択し、"maven-settings" をConfig Mapとして選択します。
 +
 image:images/lab4-devsecops08.png[200,700]
 +
-.. "maven-settings" で「Config Map」を選択し、"maven-settings" をConfig Mapとして選択します。
 .. start をクリックします。
 +
 ** Option 2: コマンドラインからパイプラインを起動する。
