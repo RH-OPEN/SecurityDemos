@@ -303,7 +303,7 @@ image:images/lab4.2-image-scan-withlogs.png[500,700]
 |Pass: stackrox
 |===
 +
-URLは、Vulnerability Managementに移動します。この画像に含まれる脆弱性(CVE)の概要を説明します。
+URLは、Vulnerability Managementに移動します。このImageに含まれる脆弱性(CVE)の概要を説明します。
 +
 image:images/lab4-devsecops35.png[500,700]
 +
@@ -320,7 +320,7 @@ image:images/lab4-devsecops34.png[500,700]
 image:images/lab4.2-tomcat-cve.png[500,700]
 +
 .. 右上の “X” をクリックすると戻ることができます
-.. CVEsタブは、画像のすべての脆弱性を表示します。
+.. CVEsタブは、Imageのすべての脆弱性を表示します。
 +
 image:images/lab4-devsecops36.png[500,700]
 +
@@ -354,7 +354,7 @@ image:images/lab4-devsecops41.png[400,700]
 +
 . もし *image-check* が失敗したら、パイプラインの実行に移動して `image-check` をクリックします。ログの一番下に `Error: failed policies found: 1 policy violated that are failing the check.` と表示されます。このエラーの原因は、違反が発生した場合に ACS がビルドやデプロイからポリシーを強制するためです。パイプラインでは、Tektonタスクのroxctlを介してACSを統合しています。
 +
-Imageがポリシーに違反した場合、コードを修正し、チェックに合格するまでパイプラインを実行することがベストプラクティスです。ログには違反の一覧と対処法が報告されています。開発者は `image-check` タスクのログから情報を取得し、それに応じて変更を加えることができます。修正がGitにチェックインされると、パイプラインが起動されます。今回、xref:fiximage[画像を修正するためのボーナスエクササイズ]を用意しました。もし、パイプライン上で他のタスクのテストを続けたい場合は、ポリシーに例外を追加して、spring-petclinicを除外することができます。
+Imageがポリシーに違反した場合、コードを修正し、チェックに合格するまでパイプラインを実行することがベストプラクティスです。ログには違反の一覧と対処法が報告されています。開発者は `image-check` タスクのログから情報を取得し、それに応じて変更を加えることができます。修正がGitにチェックインされると、パイプラインが起動されます。今回、xref:fiximage[Imageを修正するためのボーナスエクササイズ]を用意しました。もし、パイプライン上で他のタスクのテストを続けたい場合は、ポリシーに例外を追加して、spring-petclinicを除外することができます。
 ポリシーに例外を追加することは、開発者がコードを修正する必要があり、CIプロセスがテストを継続する必要がある場合に有効である。
 +
 [注意] 違反が通るようにコードを修正することが推奨されるアプローチになることに注意してください。
@@ -403,7 +403,7 @@ image:images/lab4.2-5-clone-policy-name.png[300,700]
 +
 * `Next` をクリックします。
 * ポリシーの動作で `Next` をクリックします。
-* 画像を除外するために、Policy criteria の `Next` をクリックし、Policy scope セクションの UI を表示します。
+* Imageを除外するために、Policy criteria の `Next` をクリックし、Policy scope セクションの UI を表示します。
 * Exclude imagesセクションで、`Excluded Images (Build Lifecycle only)` リストのオプションをフィルタリングするために以下をタイプします:
 +
 |===
@@ -700,7 +700,7 @@ image:images/lab4-devsecops93.png[300,700]
 +
 image:images/lab4-bonus-result.png[300,700]
 +
-[注意] https://raw.githubusercontent.com/RedHatDemos/SecurityDemos/master/2021Labs/OpenShiftSecurity/documentation/labs-artifacts/s2ijava-mgr.yaml[*labs-artifacts/s2ijava-mgr.yaml]*** **ファイルに、どのように画像が修正されたかの詳細が記載されていますので、ご確認ください。ビルドタスクにステップを追加し、buildahを活用してイメージからパッケージマネージャーを削除しています(ファイル内で "rpm" or "yum" を検索してください)。
+[注意] https://raw.githubusercontent.com/RedHatDemos/SecurityDemos/master/2021Labs/OpenShiftSecurity/documentation/labs-artifacts/s2ijava-mgr.yaml[*labs-artifacts/s2ijava-mgr.yaml]*** **ファイルに、どのようにImageが修正されたかの詳細が記載されていますので、ご確認ください。ビルドタスクにステップを追加し、buildahを活用してイメージからパッケージマネージャーを削除しています(ファイル内で "rpm" or "yum" を検索してください)。
 +
 image:images/lab4-devsecops94.png[300,700]
 
