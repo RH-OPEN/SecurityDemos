@@ -402,7 +402,7 @@ image:images/lab4-devsecops48.png[300,700]
 image:images/lab4.2-5-clone-policy-name.png[300,700]
 +
 * `Next` をクリックします。
-* ポリシーの動作で `Next` をクリックします。
+* Policy behaviorで `Next` をクリックします。
 * Imageを除外するために、Policy criteria の `Next` をクリックし、Policy scope セクションの UI を表示します。
 * Exclude imagesセクションで、`Excluded Images (Build Lifecycle only)` リストのオプションをフィルタリングするために以下をタイプします:
 +
