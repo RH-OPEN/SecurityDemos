@@ -491,7 +491,7 @@ image:images/lab4-devsecops57.png[300,700]
 +
 image:images/lab4-devsecops43.png[300,300]
 +
-.. リンクは Argo CD のログインにリダイレクトされます。初めてArgo CDにログインする場合は、``LOG IN VIA OPENSHIFT`` のリンクをクリックしてください。
+.. リンクは Argo CD のログインにリダイレクトされます。初めてArgo CDにログインする場合は、``Advanced`` → ``Proceed to openshift-gitops-server-openshift-gitops.apps...`` のリンクをクリックしてください。
 .. "admin" ユーザーとしてログインするためには、まず、以下のコマンドを実行して、そのパスワードを取得してください。
 +
 [source]
