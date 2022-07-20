@@ -496,7 +496,7 @@ image:images/lab4-devsecops43.png[300,300]
 +
 [source]
 ----
-oc get secret/openshift-gitops-cluster -n openshift-gitops -o jsonpath='{.data.admin\.password}' | base64 -d
+oc get secret/openshift-gitops-cluster -n openshift-gitops -o jsonpath='{.data.admin\.password}' | base64 -d ; echo
 ----
 +
 .. ログインすると、以下のように Argo CD コンソールにアプリケーションがリストアップされます。
