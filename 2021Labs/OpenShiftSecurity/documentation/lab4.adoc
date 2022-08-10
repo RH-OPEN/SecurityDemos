@@ -47,6 +47,9 @@ image:images/lab4-devsecops02.png[800,800]
 === ユーザー要件
 
 - 最新のブラウザー: ChromeとFirefoxを推奨
+- インターネット経由でのラボ環境へのアクセス
+- インターネット経由での GitHub へのアクセス
+
 - コマンドラインと``oc``ツールは、ラボに付属しているBastion VMに含まれています。
 
 * 以下のコマンドのように、割り当てられた VM に SSH 接続します:
@@ -88,8 +91,6 @@ image:images/lab4-devsecops03.png[200,200]
 |mv <insert-download-path> /usr/local/bin/
 |===
 +
-* インターネット接続可能なラボ環境
-* GitHub へのインターネットアクセス
 
 === Lab 4.1 継続的インテグレーション
 
