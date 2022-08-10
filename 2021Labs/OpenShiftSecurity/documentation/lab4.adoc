@@ -199,7 +199,7 @@ image:images/lab4-devsecops17.png[400,700]
 +
 . `Pipeline Runs` タブで実行中のパイプラインをクリックします。
 +
-起動すると下図のようなPipeline Run detailsが表示されますので、状況をご覧ください。
+パイプラインが起動していると下図のようなPipeline Run detailsが表示されますので、状況をご覧ください。
 +
 image:images/lab4-devsecops18.png[500,700]
 +
