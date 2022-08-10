@@ -485,7 +485,7 @@ image:images/lab4-devsecops55.png[300,700]
 +
 .. ボーナスラボ： 余裕のある方は、 xref:fiximage[bonus lab] でImageを修正し、違反のないイメージの作成にチャレンジしてみてください。  +
 対応が終わったら、上で付与したポリシーの例外を削除します。
-.. Kubernetes kustomization ファイルは、*update deployment step* で、dev用のオーバーレイにある最新のイメージ [commit-sha] で更新されます。これにより、私たちのアプリケーションは、このパイプラインで特定のビルドされたイメージを使用してデプロイされることが保証されます。
+.. *update deployment step* タスクで、Kubernetes kustomization ファイルは、dev用のオーバーレイにある最新のイメージ [commit-sha] で更新されます。これにより、私たちのアプリケーションは、このパイプラインでビルドされた特定のイメージを使用してデプロイされることが保証されます。
 +
 image:images/lab4-devsecops56.png[300,700]
 
