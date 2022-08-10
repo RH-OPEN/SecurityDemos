@@ -193,9 +193,9 @@ image:images/lab4-devsecops16.png[400,700]
 +
 image:images/lab4-devsecops17.png[400,700]
 +
-. パイプラインの実行をクリックします。
+. `Pipeline Runs` タブでパイプラインの進捗確認をします。
 +
-起動すると下図のようなPipeline Runが表示されますので、ご覧ください。
+起動すると下図のようなPipeline Runが表示されますので、状況をご覧ください。
 +
 image:images/lab4-devsecops18.png[500,700]
 +
