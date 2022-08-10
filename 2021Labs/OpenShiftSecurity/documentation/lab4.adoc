@@ -85,7 +85,7 @@ image:images/lab4-devsecops03.png[200,200]
 例えばMacbookの場合、次のコマンドを実行します。
 +
 |===
-|mv <insert-download-path> /usr/local/bin /usr/local/bin/
+|mv <insert-download-path> /usr/local/bin/
 |===
 +
 * インターネット接続可能なラボ環境
