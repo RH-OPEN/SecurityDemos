@@ -401,8 +401,8 @@ image:images/lab4-devsecops46.png[100,200]
 +
 image:images/lab4-devsecops47.png[300,700]
 +
-[注意] ACS v3.70以降では、UIでSHA無しでビルドイメージを追加できますが、本ラボではSHA無しのビルドイメージをUIで追加できないため、ワークアラウンドとして以下の手順を実施します。
-参考： https://issues.redhat.com/browse/ROX-9938[bug] 
+[注意] ACS v3.70以降では、UIでSHA無しのビルドイメージを追加できますが、本ラボのACSバージョンではUIでSHA無しのビルドイメージを追加できないため、ワークアラウンドとして以下の手順を実施します。 +
+参考： https://issues.redhat.com/browse/ROX-9938[unable to add an image (without SHA) exception in the policy] 
 
 +
 * `Fixable Severity at least Important` をクリックすると、ポリシーの詳細ページが表示されます。ポリシーページでは、`Actions` でポリシーの編集、クローン、エクスポート、無効化ができます。`Actions` の中にある ``Clone policy`` をクリックします。開発者はガイダンスの情報を使って、イメージを修正することができます。ライフサイクルステージの情報は、ポリシーの強制が行われる場所です。有効なポリシーに違反しているため、パイプラインのビルドとデプロイのステージを通過することはできません。
