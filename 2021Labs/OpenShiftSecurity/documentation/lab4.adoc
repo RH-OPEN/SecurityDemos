@@ -92,6 +92,7 @@ image:images/lab4-devsecops03.png[200,200]
 |===
 +
 
+
 === Lab 4.1 継続的インテグレーション
 
 この最初のモジュールは、OpenShift Pipeline を実行し、サンプルの安全なパイプラインのステップを探ってみましょう。 +
