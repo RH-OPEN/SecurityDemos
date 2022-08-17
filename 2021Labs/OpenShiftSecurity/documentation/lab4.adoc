@@ -708,7 +708,7 @@ image:images/lab4-devsecops93.png[300,700]
 |oc apply -f https://raw.githubusercontent.com/RedHatDemos/SecurityDemos/master/2021Labs/OpenShiftSecurity/documentation/labs-artifacts/s2ijava-mgr.yaml  -n ocp-workshop
 |===
 +
-. パイプラインを再実行すると、デプロイメントが成功しました。developersの皆さん、おめでとうございます!
+. OpenShift Dev UI を開き、パイプラインを再実行すると、デプロイメントが成功しました。developersの皆さん、おめでとうございます!
 . パイプラインの実行結果は以下のようになります。
 +
 image:images/lab4-bonus-result.png[300,700]
