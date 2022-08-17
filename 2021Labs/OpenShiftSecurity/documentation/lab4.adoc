@@ -670,15 +670,15 @@ image:images/lab4-devsecops87.png[300,700]
 +
 image:images/lab4-devsecops88.png[300,700]
 +
-.. `Red Hat Package Manager in Image` policy をくりっくします。
+.. `Red Hat Package Manager in Image` policy をクリックします。
 .. `Actions` -> `Edit policy` をクリックします。
 .. `Next` をクリックします。
 .. `Inform and enforce` を選択します。
-.. `Configure enforcement behavior`の Build で `Enforce on Build` を選択したことを確認します。
+.. `Configure enforcement behavior` の Build で `Enforce on Build` を選択し、確認します。
 +
 image:images/lab4-devsecops87.png[300,600]
 +
-.. `Next` をクリックし `Review policy` ページに移動します。
+.. `Next` を続けてクリックし `Review policy` ページに移動します。
 .. `Save` をクリックします(変更がある場合)。
 .. OpenShift Dev UI を開き、左側の Pipelines をクリック → `petclinic-build-dev` pipeline をクリック → 右上の Actions をクリック → `Start last run` を選択します。
 +
