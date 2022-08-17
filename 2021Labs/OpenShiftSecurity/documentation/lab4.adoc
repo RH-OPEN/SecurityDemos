@@ -79,7 +79,7 @@ oc login -u admin api.cluster-{GUID}.{GUID}.sandbox###.opentlc.com:6443
 +
 ``oc login`` のAPIサーバー情報は、xref:beforeyoustart[始める前に] に記載されています。
 +
-* また、ラップトップでocクライアントをセットアップする場合は、以下の手順を実行します:
+* また、ご自身のラップトップでocクライアントを利用したい場合は、以下の手順でocクライアントを入手します:
 +
 ** OpenShift コンソールにログインしてください。OpenShiftコンソールの管理者ユーザーパスワード情報は、講師から提供されます。
 右上のクエスチョンマークを選択し、“Command Line Tools” を選択します。
