@@ -401,69 +401,26 @@ image:images/lab4-devsecops46.png[100,200]
 +
 image:images/lab4-devsecops47.png[300,700]
 +
-[注意] ACS v3.70以降では、UIでSHA無しのビルドイメージを追加できますが、本ラボのACSバージョンではUIでSHA無しのビルドイメージを追加できないため、ワークアラウンドとして以下の手順を実施します。 +
-参考： https://issues.redhat.com/browse/ROX-9938[unable to add an image (without SHA) exception in the policy] 
-
 +
-* `Fixable Severity at least Important` をクリックすると、ポリシーの詳細ページが表示されます。ポリシーページでは、`Actions` でポリシーの編集、クローン、エクスポート、無効化ができます。`Actions` の中にある ``Clone policy`` をクリックします。開発者はガイダンスの情報を使って、イメージを修正することができます。ライフサイクルステージの情報は、ポリシーの強制が行われる場所です。有効なポリシーに違反しているため、パイプラインのビルドとデプロイのステージを通過することはできません。
+* `Fixable Severity at least Important` をクリックすると、ポリシーの詳細ページが表示されます。ポリシーページでは、`Actions` でポリシーの編集、クローン、エクスポート、無効化ができます。`Actions` の中にある ``Edit policy`` をクリックします。開発者はガイダンスの情報を使って、イメージを修正することができます。ライフサイクルステージの情報は、ポリシーの強制が行われる場所です。有効なポリシーに違反しているため、パイプラインのビルドとデプロイのステージを通過することはできません。
 +
 image:images/lab4-devsecops48.png[300,700]
 +
-* クローンポリシー名を `Fixable Severity at least Important - with Exception` と入力します。
-+
-image:images/lab4.2-5-clone-policy-name.png[300,700]
-+
-* `Next` をクリックします。
-* Policy behaviorで `Next` をクリックします。
-* Imageを除外するために、Policy criteria の `Next` をクリックし、Policy scope セクションの UI を表示します。
+* ``Policy details``で `Next` をクリックします。
+* ``Policy behavior``で `Next` をクリックします。
+* ``Policy criteria`` の `Next` をクリックします。Imageを除外するために、``Policy scope`` セクションの UI を表示します。
 * Exclude imagesセクションで、`Excluded Images (Build Lifecycle only)` リストのオプションをフィルタリングするために以下をタイプします:
 +
 |===
 |image-registry.openshift-image-registry.svc:5000/ocp-workshop/spring-petclinic
 |===
 +
-* spring-petclinic のImageを1つ選択してください。
+* ``Create "image-registry.openshift-image-registry.svc:5000/ocp-workshop/spring-petclinic"``Imageを選択してください。
 +
 image:images/lab4.2-5-exclude-image.png[300,700]
 +
 * `Next` をクリックします。
-* `Save` をクリックする前に、ポリシーをご確認ください。
-* ここで、新しく作成した Image例外ポリシー `Fixable Severity at least Important - with Exception` を更新する必要があります。
-* 左メニューの `Policies` をクリックします。
-* `Fixable Severity at least Important - with Exception` のポリシーを検索してください。
-+
-image:images/lab4.2-5-exceptionPolicy.png[300,700]
-+
-* ポリシーをクリックします。
-* Actions をクリック -> Export policy to JSON をクリック
-+
-image:images/lab4.2-5-exportPolicy.png[300,700]
-+
-* 選択したローカルファイルシステムとして保存します。
-* JSONファイルをお好みのエディタで開きます。
-+
-image:images/lab4.2-5-editPolicy.png[300,700]
-+
-* Image名から `@sha256:..` 以降のSHA部分を削除します。
-+
-image:images/lab4.2-5-editpolicy2.png[300,700]
-+
-* ファイルを保存します。
-* ACS コンソールに戻り、 `Fixable Severity at least Important - with Exception` ポリシー詳細ページで、 `Actions` -> `Delete policy` を選択します。
-* 左メニューの `Policies` をクリックします。
-* 右上の `Import policy` をクリックします。
-* `Upload` をクリックし、編集したJSONファイルを選択します。
-+
-image:images/lab4.2-5-importPolicy.png[200,500]
-+
-* `Begin import` をクリックします。
-* ポリシー ``Fixable Severity`` を選択してください。
-+
-image:images/lab4.2-5-filterPolicy.png[300,700]
-+
-* `Fixable Severity at least Important` の末尾の3点アイコンをクリック -> `Disable policy` を選択します。
-+
-image:images/lab4.2-5-disablePolicy.png[300,700]
+* ポリシーの変更内容を確認して、`Save` をクリックします。
 +
 .. これで、``Fixable Severity``のポリシーは以下のようになります。
 +
