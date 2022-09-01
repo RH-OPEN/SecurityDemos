@@ -439,6 +439,10 @@ image:images/lab4-devsecops54.png[300,700]
 +
 image:images/lab4-devsecops55.png[300,700]
 +
+.. [注意]``image-check`` ステップで、重大ではないその他の ACS ポリシー違反に対する警告が引き続き表示されますが、パイプラインはブロックされず、正常に完了します。
++
+image:images/lab4-devsecops55a.png[300,700]
++
 .. ボーナスラボ： 余裕のある方は、 xref:fiximage[bonus lab] でImageを修正し、違反のないイメージの作成にチャレンジしてみてください。  +
 対応が終わったら、上で付与したポリシーの例外を削除します。
 .. *update deployment step* タスクで、Kubernetes kustomization ファイルは、dev用のオーバーレイにある最新のイメージ [commit-sha] で更新されます。これにより、私たちのアプリケーションは、このパイプラインでビルドされた特定のイメージを使用してデプロイされることが保証されます。
