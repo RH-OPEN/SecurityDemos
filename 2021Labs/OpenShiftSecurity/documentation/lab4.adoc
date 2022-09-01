@@ -401,10 +401,9 @@ image:images/lab4-devsecops46.png[100,200]
 +
 image:images/lab4-devsecops47.png[300,700]
 +
-+
 * `Fixable Severity at least Important` をクリックすると、ポリシーの詳細ページが表示されます。ポリシーページでは、`Actions` でポリシーの編集、クローン、エクスポート、無効化ができます。`Actions` の中にある ``Edit policy`` をクリックします。開発者はガイダンスの情報を使って、イメージを修正することができます。ライフサイクルステージの情報は、ポリシーの強制が行われる場所です。有効なポリシーに違反しているため、パイプラインのビルドとデプロイのステージを通過することはできません。
 +
-image:images/lab4-devsecops48.png[300,700]
+image:images/lab4-devsecops48_new.png[300,700]
 +
 * ``Policy details``で `Next` をクリックします。
 * ``Policy behavior``で `Next` をクリックします。
@@ -417,14 +416,14 @@ image:images/lab4-devsecops48.png[300,700]
 +
 * ``Create "image-registry.openshift-image-registry.svc:5000/ocp-workshop/spring-petclinic"``Imageを選択してください。
 +
-image:images/lab4.2-5-exclude-image.png[300,700]
+image:images/lab4.2-5-exclude-image_new.png[300,700]
 +
 * `Next` をクリックします。
 * ポリシーの変更内容を確認して、`Save` をクリックします。
 +
 .. これで、``Fixable Severity``のポリシーは以下のようになります。
 +
-image:images/lab4.2-5-2Policy.png[300,700]
+image:images/lab4.2-5-2Policy_new.png[300,700]
 +
 .. OpenShift developer console に戻り、ナビの “ocp-workshop” プロジェクトの下にあるパイプラインをクリックします。
 +
