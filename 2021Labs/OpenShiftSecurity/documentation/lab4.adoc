@@ -520,8 +520,6 @@ image:images/lab4-devsecops67.png[300,500]
 *動的アプリケーションセキュリティテスト (DAST)* は、アプリケーションの実行状態において、セキュリティ上の脆弱性を示唆する状態を検出するために設計されています。DASTは、運用中のアプリケーションの脆弱性を特定する上で重要な役割を担っています。DASTの侵入テストを実行することで、攻撃者よりも先にそれらの脆弱性を発見することができます。
 このラボでは、例としてZAPを使用してアプリケーションセキュリティテストを実施します。アプリケーションがDevからQAに昇格した後、パフォーマンステストとペネトレーションテストが並行して開始されます。
 
-[注意] ``Internal Server Error`` で、レポートがアップロードできていない場合、ページ下部の https://github.com/RH-OPEN/SecurityDemos/blob/master/2021Labs/OpenShiftSecurity/documentation/lab4.adoc#%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%B8%E3%81%AEzap%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%AB%E5%A4%B1%E6%95%97%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F[アップロードサーバーへのzapプロキシレポートのアップロードに失敗しました] に従って、curlコマンドを修正し、パイプラインを再実行して下さい。
-
 . Openshift Pipelines の CI は、ArgoCD アプリが完全に同期され (*Wait Application step*) 、私たちのアプリとすべてのリソースがデプロイされるまで待ちます。
 .. 成功した実行済のパイプラインに移動し、ステップ *wait-application* に移動します。
 +
@@ -543,6 +541,7 @@ image:images/lab4-devsecops70.png[300,700]
 +
 Web スキャナ https://www.zaproxy.org/[OWASP Zap Proxy] を用いて、ベースラインを用いたペンテストを実行し（*ペンテストテスト*）、可能性のある脆弱性を確認します。Zap Proxyのレポートがレポートサーバーリポジトリにアップロードされます。
 結果はログの最下行からご覧ください。
+[注意] ``Internal Server Error`` で、レポートがアップロードできていない場合、ページ下部の https://github.com/RH-OPEN/SecurityDemos/blob/master/2021Labs/OpenShiftSecurity/documentation/lab4.adoc#%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%B8%E3%81%AEzap%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89%E3%81%AB%E5%A4%B1%E6%95%97%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F[アップロードサーバーへのzapプロキシレポートのアップロードに失敗しました] に従って、curlコマンドを修正し、パイプラインを再実行して下さい。
 +
 image:images/lab4-devsecops72.png[300,700]
 +
